@@ -5,6 +5,8 @@ on:
     - cron: "0 18 * * *"
   workflow_dispatch:
 
+permissions:
+  actions: read|write|none
 jobs:
   build:
     runs-on: ubuntu-latest
